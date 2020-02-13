@@ -49,7 +49,7 @@ class Rochambeau(Player):
 
     def strategy(Player):
 
-        Move = [1, 2, 3]  # gameplay options
+        Move = ['R', 'P', 'S']  # gameplay options
 
          # Player1 - she always wants to cooperate
           # Player 2 - she always wants to defect
@@ -59,13 +59,11 @@ class Rochambeau(Player):
 
         if P1 == P2: #ties register as C to make it slightly biased
             return C
-        if P1 == 1  and P2 == 2:  # defect cases                return D
+        if P1 == 'R'  and P2 == 'P':  # defect cases
             return D
-        if P1 == 2 and P2 == 3:
+        if P1 == 'P' and P2 == 'S':
             return D
-        if P1 == 3 and P2 == 1:
+        if P1 == 'S' and P2 == 'R':
           return D
         else:
            return C  # all else C
-
-
