@@ -59,11 +59,11 @@ class Rochambeau(Player):
 
         if P1 == P2: #ties register as C to make it slightly biased
             return C
-        if P1 == 1  && P2 == 2:  # defect cases                return D
+        if P1 == 1  and P2 == 2:  # defect cases                return D
             return D
-        if P1 == 2 && P2 == 3:
+        if P1 == 2 and P2 == 3:
             return D
-        if P1 == 3 && P2 == 1:
+        if P1 == 3 and P2 == 1:
           return D
         else:
            return C  # all else C
