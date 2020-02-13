@@ -47,7 +47,7 @@ class Rochambeau(Player):
         if p in [0, 1]:
             self.classifier["stochastic"] = False
 
-    def strategy(Player)
+    def strategy(Player):
 
         Move = [1, 2, 3]  # gameplay options
 
